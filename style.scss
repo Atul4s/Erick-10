@@ -2,6 +2,12 @@
 
 
 
+
+
+ 
+    
+  
+
 *{
     margin: 0;
     padding: 0;
@@ -691,9 +697,13 @@ html , body{
              
               width: 40%; 
               display: flex;
+
               
              
             }
+           
+        
+           
     
     
             .client-info{
@@ -741,6 +751,7 @@ html , body{
                 }
             }
         }
+       
     }
     
     .view-9{
@@ -1032,6 +1043,8 @@ html , body{
 
 
 
+//Mobile
+
 @media (max-width: 992px) {
     .view-one {
         width: 100%;
@@ -1122,8 +1135,12 @@ html , body{
          padding-top: 0;
          padding-bottom: 0;
          
+         
         }
-    
+
+        
+       
+       
     
         .imgtag{
             font-size: 10px;
@@ -1340,8 +1357,8 @@ html , body{
     .view-five{
         
           display: flex;
-         flex-direction: row;
-         margin-top: 4rem;
+         flex-direction: column;
+    
       
         
         
@@ -1352,8 +1369,8 @@ html , body{
     .bradn-deatils{
     
         .linebrek{
-    
-           margin-left: 3rem;
+    padding: 1rem;
+           
            opacity: .8;
         }
     }
@@ -1364,15 +1381,13 @@ html , body{
     
     
     .our{
-        font-size: 6rem;
+        font-size: 2.5rem;
         color: #111;
         font-family: "Roboto Mono" ,serif;
         font-weight: 400;
         text-transform: uppercase;
-        margin-left: 2rem;
         padding: 1rem;
-        line-height: 100%;
-        width: 50%;
+        width: 100%;
         
     
     }
@@ -1381,8 +1396,8 @@ html , body{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 2.2rem;
     padding: .8rem;
+   
     
     .circle-botton {
         width: 30px;
@@ -1392,7 +1407,7 @@ html , body{
         justify-content: center;
         border-radius: 50%;
         background-color: #111111;
-       
+        
         
     
         svg {
@@ -1409,7 +1424,7 @@ html , body{
         position: absolute;
         color: #000;
         font-weight: bold;
-        
+        position: relative;        
         
     }
       
@@ -1418,9 +1433,8 @@ html , body{
        }
     .brand-1{
         display: flex;
-        flex-direction: row;
-        margin-bottom: 2rem ;
-        margin-top: 2rem;
+        flex-direction: column;
+        
     
     
     
@@ -1432,7 +1446,7 @@ html , body{
         font-family: "Roboto Mono" ,serif;
         font-weight: 400;
         text-transform: uppercase;
-        margin-left: 3.2rem;
+        padding: 1rem;
         
         }
     
@@ -1444,14 +1458,15 @@ html , body{
             font-weight: 400;
             opacity: .5;
             align-items: center;
-            margin-left: 3.1rem;
+            margin-left: 1rem;
+            width: 80%;
         }
     }
     
     .brand-2{
     
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     
         h1{
     
@@ -1460,7 +1475,7 @@ html , body{
             font-family: "Roboto Mono" ,serif;
             font-weight: 400;
             text-transform: uppercase;
-            margin-left: 3.2rem;
+            padding: 1rem;
             
             }
         
@@ -1472,7 +1487,8 @@ html , body{
                 font-weight: 400;
                 opacity: .5;
                 align-items: center;
-                margin-left: 3.1rem;
+                margin-left: 1rem;
+                width: 80%;
             }
     
     
@@ -1486,7 +1502,7 @@ html , body{
     
         .imgtt{
             width: 100%;
-            padding: 2rem;
+            padding: 1rem;
         }
     }
     
@@ -1496,19 +1512,19 @@ html , body{
     width: 100%;
     
         .view-6-img img{
-            padding: 3rem;
+            padding: 1rem;
             width: 100%;
             
         }
     
         .view-6-main{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             width: 100%;
     
             .view-6-left{
                 display: flex;
-                flex-direction: row; 
+                flex-direction: column; 
                 width: 100%; 
                
     
@@ -1517,7 +1533,16 @@ html , body{
             .view-6-left img{
     
                 padding: 1rem;
-                width: 45%;
+                width: 100%;
+
+        
+            }
+
+            
+            .view-6-left img:nth-child(2){
+    
+               display: none;
+                
         
             }
     
@@ -1529,8 +1554,9 @@ html , body{
     
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 100%;
             justify-content: space-between;
+            padding: 1rem;
     
     
             h1{
@@ -1540,7 +1566,7 @@ html , body{
                 font-family: "Roboto Mono" ,serif;
                 font-weight: 350;
                 text-transform: uppercase;
-               margin-top: 4rem;
+               margin-top: 1rem;
              
                width: 60%;
                 
@@ -1564,6 +1590,7 @@ html , body{
             display: flex;
             align-items: center;
             flex-direction: row;
+            margin-top: .8rem;
            
         
             .circle-botton {
@@ -1600,22 +1627,32 @@ html , body{
     
     
     .view-7{
-        width: 100%;
+    
         
-            .view-7-img img{
-                padding: 1rem;
-                width: 100%;
-                
+            .view-7-img {
+                  width: 100%;
+
+
+                img{
+              
+                    width: 100%;
+                    
+                }
             }
+            
+            
+            
+            
+           
         
             .view-7-main{
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: column;
                 width: 100%;
         
                 .view-7-left{
                     display: flex;
-                    flex-direction: row; 
+                    flex-direction: column; 
                     width: 100%; 
                    
         
@@ -1623,12 +1660,14 @@ html , body{
         
                 .view-7-left img{
         
-                    padding: 2rem;
-                    width: 50%;
+                    padding: 1rem;
+                    width: 100%;
             
                 }
         
-        
+                .view-7-left img:nth-child(1){
+                    display: none;
+                }
         
             }
         
@@ -1636,8 +1675,8 @@ html , body{
         
                 display: flex;
                 flex-direction: column;
-                width: 40%;
-                padding: 2rem;
+                width: 100%;
+                padding: 1rem;
                justify-content: space-between;
         
         
@@ -1648,8 +1687,7 @@ html , body{
                     font-family: "Roboto Mono" ,serif;
                     font-weight: 350;
                     text-transform: uppercase;
-                   margin-top: 4rem;
-                   width: 60%;
+                   width: 100%;
                     
                 }
         
@@ -1671,7 +1709,7 @@ html , body{
                 display: flex;
                 align-items: center;
                 margin-right: 3rem;
-                margin-top: 5rem;
+                margin-top: 2rem;
             
                 .circle-botton {
                     width: 40px;
@@ -1713,30 +1751,32 @@ html , body{
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: end;
-            padding: 3rem; 
+            padding: 1rem;
+           
+           
             
             img{
              
-              width: 40%; 
+              width: 70%; 
               display: flex;
+              
               
              
             }
     
-    
+            
+             
             .client-info{
                 display: flex;
                 flex-direction: column;
-               padding: 2rem;
+             
     
     
                 .client-box{
                     display: flex;
-                    flex-direction: row;
-                  gap: 5rem;
-                  align-items: center;
-                  padding: 1.5rem;
+                    flex-direction: column;
+                  
+                  padding: 1rem;
     
                   p{
                     font-size: .8rem;
@@ -1749,7 +1789,6 @@ html , body{
                     font-size: 1.8rem;
                     color: #111;
                     font-family: "Roboto Mono" ,serif;
-                    margin-right: 30rem;
                     font-weight: 400;
                     text-transform: uppercase;
                    
@@ -1758,9 +1797,9 @@ html , body{
                   span{
                     text-transform: uppercase;
                     opacity: .8;
-                   position: absolute;
-                   right: 60px;
-                   padding: 1rem;
+                   margin-top: .5rem;
+                
+                   
                    
                   }
     
@@ -1770,26 +1809,29 @@ html , body{
                 }
             }
         }
+
+       
     }
     
     .view-9{
-    
+    width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         
         .team{
             display: flex;
-            flex-direction: row;
-            padding: 3rem;
-            justify-content:space-around;
-            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            
     
             h1{
-                font-size:8rem;
+                font-size:4rem;
                     color: #111;
                     font-family: "Roboto Mono" ,serif;
                     font-weight: 400;
                     text-transform: uppercase;
+                    margin-top: .5rem;
                    
             }
     
@@ -1798,15 +1840,18 @@ html , body{
                     color: #111;
                     font-family: "Roboto Mono" ,serif;
                     font-weight: 400;
-                    width: 40%;
+                    width: 100%;
             }
     
            }
     
           .profile{
+         
             display: flex;
-            flex-direction: row;
-            
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
            }
     
     
@@ -1814,8 +1859,8 @@ html , body{
           width: 100%;
             display: flex;
             flex-direction: column;
-            text-align: center;
-            align-items: center;
+          
+            padding: 1rem;
             
             h1{
                 font-size:2rem;
@@ -1823,13 +1868,11 @@ html , body{
                     font-family: "Roboto Mono" ,serif;
                     font-weight: 400;
                     text-transform: uppercase;
-                    position: relative;
-                    right: 65px;
+                    
             }
     
             img{
-                width: 300px;
-                object-fit: cover;
+                width: 100%;
             }
         }
     
@@ -1837,22 +1880,27 @@ html , body{
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            padding: .5rem;
+           justify-content: center;
+            gap: 4rem;
+            padding: 1rem;
+            
     
     
             span{
             color: rgb(0, 0, 0);
             text-decoration: none;
             border-radius: 20px;
+        
             
             }
     
             p{
-                 font-size:1rem;
+                 font-size:1.2rem;
                   color: #111;
                   font-family: "Roboto Mono" ,serif;
                   font-weight: 400;
+                  
+                
                   
              
                   
@@ -1866,19 +1914,20 @@ html , body{
             color: #111;
             font-family: "Roboto Mono" ,serif;
             font-weight: 400;
-            padding: .7rem;
             opacity: .8;
+           width: 100%;
+           text-align: center;
           }
     }
     
     .view-10{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
     
     .left-view{
-        width: 70%;
+        width: 100%;
         
     }
     
@@ -1887,7 +1936,7 @@ html , body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    gap: 1rem;
+        gap: 1rem;
     
         
         p{
@@ -1897,12 +1946,12 @@ html , body{
     
         h1{
     
-                    font-size: 3rem;
+                    font-size: 2rem;
                     color: #111;
                     font-family: "Roboto Mono" ,serif;
                     font-weight: 400;
                     text-transform: uppercase;
-                     width: 75%;
+                     width: 100%;
                      
         }
         .btn-arro{
@@ -1959,7 +2008,7 @@ html , body{
         h1{
             color: #fff;
             text-transform: uppercase;
-            font-size: 10rem;
+            font-size: 2.5rem;
             font-weight: 300;
             font-family: "Roboto Mono", serif;
         }
@@ -1967,10 +2016,10 @@ html , body{
         h4{
             color: #fff;
             text-transform: uppercase;
-            font-size: 4.2rem;
+            font-size: 1.2rem;
             font-weight: 300;
             text-align: center;
-            width: 80%;
+            width: 60%;
             font-family: "Roboto Mono", serif;
         }
     
@@ -2004,7 +2053,9 @@ html , body{
             display: flex;
             justify-content: space-between;
             padding: 40px;
+            flex-direction: column;
             background-color: #111;
+            gap: 2rem;
         }
         .footer .column {
             flex: 1;
@@ -2054,3 +2105,5 @@ html , body{
         }
     }
 }
+
+
